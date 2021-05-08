@@ -16,7 +16,7 @@ class App extends React.Component {
     const response = await unSplash.get("/search/photos", {
       params: { query: term },
     });
-    console.log(term, response.data.results);
+    //console.log(term, response.data.results);
     this.setState({ images: response.data.results });
   };
 
